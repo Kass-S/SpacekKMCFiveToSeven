@@ -13,14 +13,18 @@ namespace SpacekKMCFiveToSeven.Services
             int convertNum = 0;
             validNum = int.TryParse(oddEvenNum, out convertNum);
 
-            if(validNum == false){
+            if(validNum == false)
+            {
                 return "Please enter a valid number.";
-            } else{
-                if(convertNum%2==0){
-                return $"Your number ({convertNum}) is even.";
-            }else{
-                return $"Your number ({convertNum}) is odd";
-            }
+            } else
+            {
+                if(convertNum%2==0)
+                {
+                    return $"Your number ({convertNum}) is even.";
+                }else
+                {
+                    return $"Your number ({convertNum}) is odd";
+                }
             }
 
         }

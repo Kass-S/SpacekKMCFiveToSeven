@@ -17,6 +17,7 @@ private readonly MadLibServices _madLibServices;
         {
             _madLibServices = madLibServices;
         }
+        
         [HttpGet]
         [Route("MadLib/{noun}/{animal}/{name}/{diffName}/{emotion}/{action1}/{dreamJob}/{structure}")]
         public string MadLib(string noun, string animal, string name, string diffName, string emotion, string action1, string dreamJob, string structure)

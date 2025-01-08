@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<MadLibServices>();
 builder.Services.AddScoped<StringReverseServices>();
 builder.Services.AddScoped<OddEvenServices>();
+builder.Services.AddScoped<NumberReverseService>();
 
 var app = builder.Build();
 
