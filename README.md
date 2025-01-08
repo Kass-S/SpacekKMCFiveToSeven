@@ -7,4 +7,8 @@ Created four enpoints, each with their own conroller and service files.
 3. Takes an input and reverses it
 4. Takes a numbers only input and reverses it.
 
-Reviewed by:
+Reviewed by: Santiago Jesus Montanez
+
+It works just fine. I tested to see if you had accounted for characters to be used in place of numbers and it caught the invalid attempts ✅
+Controllers and services for all parts of assignment ✅
+The only thing I am unsure of is if using [HTTPGet] 🆚 [HTTPPost]... which would be better to use for the assignment
