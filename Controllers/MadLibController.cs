@@ -11,14 +11,14 @@ namespace SpacekKMCFiveToSeven.Controllers
     [Route("[controller]")]
     public class MadLibController : ControllerBase
     {
-        private readonly MadLibServices _madLibServices;
+        
+private readonly MadLibServices _madLibServices;
         public MadLibController(MadLibServices madLibServices)
         {
             _madLibServices = madLibServices;
         }
-
         [HttpGet]
-        [Route("MadLb/{noun}/{animal}/{name}/{diffName}/{emotion}/{action1}/{dreamJob}/{structure}")]
+        [Route("MadLib/{noun}/{animal}/{name}/{diffName}/{emotion}/{action1}/{dreamJob}/{structure}")]
         public string MadLib(string noun, string animal, string name, string diffName, string emotion, string action1, string dreamJob, string structure)
         {
             return _madLibServices.MadLib(noun, animal, name, diffName, emotion, action1, dreamJob, structure);
